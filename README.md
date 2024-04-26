@@ -41,4 +41,9 @@ Please see my [Google Scholar](https://scholar.google.com/citations?user=SZPSZm0
 - Course Exam: Electromagnetic (EM) Boundaries - Reflection and transmission of TE and TM polarized EM waves through a multi-layer dielectric slab structure
   - [Exam Report](https://github.com/jman4162/electromagnetics-work-samples/blob/main/EM%20Boundaries%20-%20Hodge_John_ECE_5105_Final_Exam_Draft_A%20(1).pdf)
   - [MATLAB Code](https://github.com/jman4162/electromagnetics-work-samples/tree/main/ece5105finalexamfinalcode)
+- Course Project: Compute EM Scattering Using Multipole Expansion of Spherical Harmonics
+  - [Scattering Field Plots](TK)
+  - [Matlab Code](TK)
+- Course Exam: Radar Signal Processing - Analysis of Various Clutter Suppression Methods for a Ground-Based L-Band ARSR-3 Air Traffic Control Radar System
+  - [Exam Report](TK)
 
