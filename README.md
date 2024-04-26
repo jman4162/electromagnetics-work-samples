@@ -1,5 +1,5 @@
 # electromagnetics-work-samples
-I am providing work samples of electromagnetic, RF, antenna, and radar system analysis that I performed for graduate school assignments.
+I am providing work samples of electromagnetic, RF, antenna, and radar system analysis that I performed for graduate school assignments and public industry presentations.
 
 ## Electromagnetics Work Samples
 
