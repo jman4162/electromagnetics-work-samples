@@ -5,7 +5,7 @@ I am providing work samples of electromagnetic, RF, antenna, and radar system an
 
 Welcome to the Electromagnetics Work Samples repository. This repository is a collection of work samples, experiments, and projects in the field of electromagnetics. While I cannot share proprietary work samples from past employers, this aims to provide samples of past work.
 
-Please see my [Google Scholar](https://scholar.google.com/citations?user=SZPSZm0AAAAJ&hl=en) profile for a comprehensive list of academic journal and conference presentation.
+Please see my [Google Scholar](https://scholar.google.com/citations?user=SZPSZm0AAAAJ&hl=en) profile for a comprehensive list of academic journal and conference papers and my [LinkedIn](https://www.linkedin.com/in/jhodge007/) profile for a list of professional experiences. 
 
 ## Table of Contents
 
