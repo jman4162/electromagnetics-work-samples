@@ -30,6 +30,8 @@ Please see my [Google Scholar](https://scholar.google.com/citations?user=SZPSZm0
     - Transmission Line Single-Stub Impedance Matching
     - Radar cross-section (RCS) of a Spinning Dumbbell Target Consisting of Two Small PEC Spheres
     - Radiated Fields and Power Radiated From Rotating Bar Magnet
+- Virginia Tech Electromangetics (EM) Master's Thesis: Analysis of Periodic and Random Capacitively-Loaded Loop (CLL) Metamaterial Structures for Antenna Enhancement Applications
+  - [Thesis Document](https://vtechworks.lib.vt.edu/items/d62c3c0f-6957-4543-800e-e33d28bef215)
 - Course Project: Finite-Difference Time-Domain (FDTD) Waveguide Simulation
   - [Project Report](https://github.com/jman4162/electromagnetics-work-samples/blob/main/Hodge_John_ECE_5106_FDTD_Project_Doc_Draft_C.pdf)
   - [MATLAB Code](https://github.com/jman4162/electromagnetics-work-samples/tree/main/fdtd-waveguide-calcs)
@@ -42,8 +44,8 @@ Please see my [Google Scholar](https://scholar.google.com/citations?user=SZPSZm0
   - [Exam Report](https://github.com/jman4162/electromagnetics-work-samples/blob/main/EM%20Boundaries%20-%20Hodge_John_ECE_5105_Final_Exam_Draft_A%20(1).pdf)
   - [MATLAB Code](https://github.com/jman4162/electromagnetics-work-samples/tree/main/ece5105finalexamfinalcode)
 - Course Project: Compute EM Scattering Using Multipole Expansion of Spherical Harmonics
-  - [Scattering Field Plots](TK)
-  - [Matlab Code](TK)
+  - [Scattering Field Plots](https://github.com/jman4162/electromagnetics-work-samples/tree/main/ECE%205106%20-%20Compute%20EM%20Scattering%20Using%20Multipole%20Expansion%20of%20Spherical%20Harmonics/Plots)
+  - [Matlab Code](https://github.com/jman4162/electromagnetics-work-samples/tree/main/ECE%205106%20-%20Compute%20EM%20Scattering%20Using%20Multipole%20Expansion%20of%20Spherical%20Harmonics/Matlab%20Code)
 - Course Exam: Radar Signal Processing - Analysis of Various Clutter Suppression Methods for a Ground-Based L-Band ARSR-3 Air Traffic Control Radar System
-  - [Exam Report](TK)
+  - [Exam Report](https://github.com/jman4162/electromagnetics-work-samples/blob/main/Hodge_John_ECE_5636_Final_Exam_Report%20-%20Analysis%20of%20Various%20Clutter%20Suppression%20Methods%20for%20a%20Ground-Based%20L-Band%20ARSR-3%20Air%20Traffic%20Control%20Radar%20System.pdf)
 
