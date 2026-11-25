@@ -51,6 +51,19 @@ Work samples in electromagnetics, RF/antenna engineering and radar systems: grad
 4. Radar cross-section (RCS) of a spinning dumbbell target made of two small PEC spheres
 5. Fields and power radiated by a rotating bar magnet
 
+## Related open-source tools
+
+| Repository | What it is |
+|---|---|
+| [RF-and-Antenna-Tutorials](https://github.com/jman4162/RF-and-Antenna-Tutorials) | Worked-problem Python notebooks, including modern, tested versions of the FDTD, multilayer and sphere-scattering projects in this repo |
+| [OpenEM Wave Lab](https://github.com/jman4162/openem-wave-lab) | Interactive browser lessons on electromagnetic wave physics ([live demo](https://jman4162.github.io/openem-wave-lab/)) |
+| [metasurface-py](https://github.com/jman4162/metasurface-py) | Programmable metasurface (RIS) design, beamforming under hardware constraints, and channel and sensing models; builds on the PhD research above |
+| [Phased-Array-Antenna-Model](https://github.com/jman4162/Phased-Array-Antenna-Model) | Array-factor computation, beamforming and 3-D radiation-pattern visualization |
+| [phased-array-systems](https://github.com/jman4162/phased-array-systems) | System-level phased-array design, optimization and trade studies for communications and radar |
+| [EdgeFEM](https://github.com/jman4162/EdgeFEM) | 3-D finite-element frequency-domain solver for waveguides, patch antennas and periodic unit cells |
+| [antenna-cad](https://github.com/jman4162/antenna-cad) | Compiles antenna and phased-array design intent into simulation-ready KiCad PCB layouts |
+| [opensatcom](https://github.com/jman4162/opensatcom) | Satellite link margin and capacity from antenna, RF chain, propagation and mission time series |
+
 ## Repository layout
 
 ```

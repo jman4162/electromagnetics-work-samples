@@ -35,6 +35,16 @@ Both scripts are standalone. Open MATLAB in this folder and run either one by na
 
 **The 2-D script is heavy.** It stores every time step of all six field components (about 1.25 GB), prints the step number on each of the 10,000 iterations, and ends by animating all 10,000 frames. To skip the animation, set `animate_fields = 0` at line 444 before running.
 
+## Known issues and a modern version
+
+A 2026 code review found these problems in the original scripts. The code here is left as it was written in 2016.
+
+- `FDTD_1D_Take2_C.m`, line 39: the "single-mode" starting field uses `(1:N)` where `(0:N-1)` is needed, so it is shifted by one node and is nonzero on the PEC walls. Zeroing the walls then excites other cavity modes.
+- `ECE_5106_FDTD_Project_2D_A6.m`: the FFT probe sits at the guide's center, which is a node of H<sub>z</sub> for the TE<sub>10</sub> mode, so the dominant mode is weak in the computed spectrum.
+- `ECE_5106_FDTD_Project_2D_A6.m`: the Gaussian pulse is computed but never used as the source, and β is fixed at 0.
+
+**Modern version:** [FDTD from scratch: a 1-D cavity and a 2-D waveguide](https://github.com/jman4162/RF-and-Antenna-Tutorials/blob/main/FDTD_From_Scratch_Cavity_and_Waveguide_Tutorial.ipynb) (Python notebook). It fixes these issues, sweeps β to build the full dispersion diagram, and checks every resonance against the scheme's exact discrete dispersion relation.
+
 ## Report
 
 [Full project report (PDF, 55 pages)](../../Hodge_John_ECE_5106_FDTD_Project_Doc_Draft_C.pdf): derivations, update equations, boundary conditions, results and the parameter studies.

@@ -37,6 +37,13 @@ Despite "FDTD" in their names, these scripts solve the problem analytically; the
 
 Open MATLAB in this folder and run a script by name. **Known issue:** the four `ECE_5106_FDTD_Final_Exam_*` scripts call a spherical Hankel function, `function_hankel_first`, that wasn't in the original upload. The version in [`../multipole-scattering`](../multipole-scattering/function_hankel_first.m) takes its arguments as `(x, L)`, but the characteristic-equation lines here call it as `(L, x)`. These scripts need that reconciled before they will run correctly. `plot_YLM.m` and `plot_sph_besselj.m` don't use that function.
 
+## Known issues
+
+Besides the missing `function_hankel_first` described above, a 2026 code review found two errors. The code is left as written in 2016; the report itself uses the correct material values.
+
+- All five scripts that define the materials set `eps_r = sqrt(n)` where it should be `n^2`. The wavenumbers use n directly and are right, but the wave impedances Z<sub>co</sub> and Z<sub>cl</sub> come out as Z<sub>0</sub>/n<sup>1/4</sup> instead of Z<sub>0</sub>/n, which shifts the characteristic-equation roots. The report uses the correct ε<sub>r</sub> = 1.96 and Z<sub>co</sub> = 269.09 Ω.
+- `ECE_5106_FDTD_Final_Exam_B.m` and `_B_omega_search.m` (line 50) compute `XLM_phi` with `function_XLM_theta`, and `_Part_A_plot_fields.m` (line 69) uses the θ function for the φ component, so E<sub>φ</sub> duplicates E<sub>θ</sub> in the field plots.
+
 ## Report
 
 [Full exam report (PDF, 23 pages)](../../Whispering%20Gallery%20Mode%20-%20Hodge_John_ECE_5106_Final_Exam_Doc_Draft_E.pdf): derivation of the characteristic equation, the mode search, field plots and the stored-energy calculation.

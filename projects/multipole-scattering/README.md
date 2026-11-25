@@ -41,6 +41,17 @@ Radial derivatives of the Bessel and Hankel functions, and angular derivatives o
 
 Open MATLAB in this folder and run a script by name, e.g. `ECE_5106_HW5_P5c_Take1`. Every helper function the scripts call is in this folder. Each script starts with `clear all`, so save your workspace first.
 
+## Known issues and a modern version
+
+A 2026 code review found two errors in `ECE_5106_HW5_P5c_Take1.m`, the script behind the total-field map. The code is left as written in 2016.
+
+- The grid coordinate `x` (line 30) overwrites `x = k*r` (line 16), so on the first pass of the L loop the L = 1 terms (lines 70 and 75) are evaluated at the Cartesian coordinate instead of kr.
+- `function_calc_f_L_kr.m` recomputes β<sub>L</sub> at the observation radius instead of at the sphere radius r = a, so the radial-derivative terms use the wrong coefficient everywhere outside the sphere.
+
+The coefficient and cross-section formulas used in `P5a` and `P5b` are equivalent to the standard Mie result; the notebook below shows the match.
+
+**Modern version:** [Scattering from a conducting sphere: the Mie series](https://github.com/jman4162/RF-and-Antenna-Tutorials/blob/main/Scattering_From_a_Conducting_Sphere_Mie_Series_Tutorial.ipynb) (Python notebook). It computes the field map for the same ka = 0.6 case and checks the plane-wave expansion, the boundary condition on the sphere, the optical theorem and the Rayleigh and optical limits.
+
 ## Report
 
 There is no standalone report for this homework set; the figures in [`plots/`](plots/) are its outputs.
