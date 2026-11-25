@@ -2,13 +2,13 @@
 
 Work samples in electromagnetics, RF/antenna engineering and radar systems: graduate research and coursework from Virginia Tech, and public industry talks given at Northrop Grumman. Proprietary work from past employers can't be shared; everything here is academic or approved for public release.
 
-**Elsewhere:** [Google Scholar](https://scholar.google.com/citations?user=SZPSZm0AAAAJ&hl=en) (journal and conference papers) · [LinkedIn](https://www.linkedin.com/in/jhodge007/) (professional experience) · [Phased-array radiation patterns in Python](https://github.com/jman4162/Phased-Array-Antenna-Model) (Jupyter tutorial)
+**Elsewhere:** [john-hodge.com](https://john-hodge.com/) (personal site) · [Research and publications](https://john-hodge.com/research/) · [Google Scholar](https://scholar.google.com/citations?user=SZPSZm0AAAAJ&hl=en) · [LinkedIn](https://www.linkedin.com/in/jhodge007/) · [Phased-array radiation patterns in Python](https://github.com/jman4162/Phased-Array-Antenna-Model)
 
 ## Highlights
 
 | | |
 |:---:|---|
-| <img src="assets/ris-beam-steering.png" width="320" alt="Simulated directivity patterns of a reconfigurable metasurface steering its beam across azimuth"> | **PhD dissertation: Reconfigurable Intelligent Metasurfaces for Wireless Communication and Sensing** (2021)<br>A programmable 2-bit metasurface aperture for beam steering, spatial modulation and index modulation in next-generation wireless systems, from design and simulation through fabrication and measurement.<br>[Dissertation](https://vtechworks.lib.vt.edu/items/9011f677-0fcd-4f1a-9249-f5abe05bb806) · [Defense slides](Hodge-John-PhD-Dissertation-Defense-Nov2021-Final-2.pdf) |
+| <img src="assets/ris-prototype-board.jpg" width="320" alt="Photo of the fabricated reconfigurable metasurface prototype board: a grid of hexagonal gold meta-atoms with PIN-diode control lines"> | **PhD dissertation: Reconfigurable Intelligent Metasurfaces for Wireless Communication and Sensing** (2021)<br>A programmable 2-bit metasurface aperture for beam steering, spatial modulation and index modulation in next-generation wireless systems, from design and simulation through fabrication and measurement. Pictured: the fabricated prototype board.<br>[Research write-up](https://john-hodge.com/blog/reconfigurable-intelligent-metasurfaces-phd-research/) · [Dissertation](https://vtechworks.lib.vt.edu/items/9011f677-0fcd-4f1a-9249-f5abe05bb806) · [Defense slides](Hodge-John-PhD-Dissertation-Defense-Nov2021-Final-2.pdf) |
 | <img src="assets/fdtd-2d-waveguide.png" width="320" alt="2-D FDTD Hy field snapshot in a rectangular waveguide"> | **FDTD simulation of a cavity and a rectangular waveguide** (2016)<br>A from-scratch 1-D and 2-D Yee-scheme solver. It finds resonant modes by FFT; the report compares the waveguide's numerical dispersion relation with the analytical one.<br>[Code + overview](projects/fdtd-waveguide/) · [Report](Hodge_John_ECE_5106_FDTD_Project_Doc_Draft_C.pdf) |
 | <img src="assets/wgm-field-profile.png" width="320" alt="Whispering gallery mode field concentrated near the sphere surface"> | **Whispering gallery modes in a dielectric microsphere** (2016)<br>A spherical-harmonic field expansion and a characteristic-equation search for a high-order (L = 133) resonant mode of a 15 µm-radius sphere.<br>[Code + overview](projects/whispering-gallery-modes/) · [Report](Whispering%20Gallery%20Mode%20-%20Hodge_John_ECE_5106_Final_Exam_Doc_Draft_E.pdf) |
 | <img src="projects/multipole-scattering/plots/ECE_5106_HW5_P5c_Take1_lookup_pi_by_pi_fig.jpg" width="320" alt="Total field magnitude around a conducting sphere"> | **Scattering from a sphere by multipole expansion** (2016)<br>A plane wave expanded in vector spherical harmonics, the multipole coefficients for a conducting sphere, its scattering cross-section, and a map of the total field.<br>[Code + overview](projects/multipole-scattering/) |
@@ -22,7 +22,14 @@ Work samples in electromagnetics, RF/antenna engineering and radar systems: grad
 
 ## Research
 
-- **PhD dissertation:** Reconfigurable Intelligent Metasurfaces for Wireless Communication and Sensing Applications. [Dissertation](https://vtechworks.lib.vt.edu/items/9011f677-0fcd-4f1a-9249-f5abe05bb806) · [Defense slides](Hodge-John-PhD-Dissertation-Defense-Nov2021-Final-2.pdf)
+**PhD dissertation: Reconfigurable Intelligent Metasurfaces for Wireless Communication and Sensing Applications** (Virginia Tech, 2021). [Research write-up](https://john-hodge.com/blog/reconfigurable-intelligent-metasurfaces-phd-research/) · [Dissertation](https://vtechworks.lib.vt.edu/items/9011f677-0fcd-4f1a-9249-f5abe05bb806) · [Defense slides](Hodge-John-PhD-Dissertation-Defense-Nov2021-Final-2.pdf)
+
+| Fabricated prototype | Under test in the ARL tapered range | Simulated beam steering |
+|:---:|:---:|:---:|
+| <img src="assets/ris-prototype-board.jpg" width="260" alt="Fabricated 2-bit reconfigurable metasurface prototype board"> | <img src="assets/ris-prototype-range.jpg" width="200" alt="Metasurface prototype mounted for radiation-pattern measurement in the ARL tapered anechoic range"> | <img src="assets/ris-beam-steering.png" width="260" alt="Simulated directivity patterns steering across azimuth"> |
+| PIN-diode-controlled hexagonal meta-atoms; each column is driven by two digital control lines | Radiation patterns measured in center-fed and offset-fed configurations | 2-bit phase states steer the beam across ±60° in azimuth |
+
+- **Full publication list:** [john-hodge.com/research](https://john-hodge.com/research/)
 - **Master's thesis:** Analysis of Periodic and Random Capacitively-Loaded Loop (CLL) Metamaterial Structures for Antenna Enhancement Applications. [Thesis](https://vtechworks.lib.vt.edu/items/d62c3c0f-6957-4543-800e-e33d28bef215)
 
 ## Coursework and exams (Virginia Tech)
