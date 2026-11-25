@@ -6,14 +6,14 @@ Finds the resonant whispering gallery modes (WGMs) of a 15 µm-radius dielectric
 
 ![WGM field magnitude vs. radius](../../assets/wgm-field-profile.png)
 
-*Normalized |E| for an L = M = 126 mode at θ = π/2: the field is concentrated just inside the sphere's surface, which is the defining feature of a whispering gallery mode. Figure from the exam report.*
+*Normalized |E| for the L = M = 133 resonance at θ = π/2: the field is concentrated just inside the sphere's surface, which is the defining feature of a whispering gallery mode. Figure from the exam report.*
 
 ## What it does
 
 - **Geometry:** a sphere of radius a = 15 µm with core index n = 1.4 and cladding index n = 1.1. The search considers TE modes with L = M.
 - **Fields:** spherical Bessel functions j<sub>L</sub>(kr) inside the sphere, spherical Hankel functions h<sub>L</sub><sup>(1)</sup>(kr) outside, and vector spherical harmonics **X**<sub>LM</sub> for the angular dependence.
-- **Part A:** matching the tangential fields at r = a gives a characteristic equation. The scripts scan ω across the allowed band for each mode order L. The report finds a resonance near L = 133, ω ≈ 2.006 × 10<sup>15</sup> rad/s, and confirms it with a second method (the zero of a matrix determinant).
-- **Part B:** computes the time-averaged electric and magnetic energy stored in the resonant mode.
+- **Part A:** matching the tangential fields at r = a gives a characteristic equation. The scripts scan ω across the allowed band for each mode order L. A first scan finds a resonance near L = 133, ω ≈ 2.006 × 10<sup>15</sup> rad/s. The report then refines it by solving for the zero of a boundary-condition matrix determinant, giving the final answer: **L = 133, ω ≈ 2.0195 × 10<sup>15</sup> rad/s (λ ≈ 0.933 µm)**.
+- **Part B (report only):** the report computes the time-averaged electric and magnetic energy stored in the resonant mode. The code for that step isn't in this folder.
 
 ## Files
 
@@ -21,14 +21,14 @@ Finds the resonant whispering gallery modes (WGMs) of a 15 µm-radius dielectric
 |------|---------|
 | `ECE_5106_FDTD_Final_Exam_A_L_search.m` | Part A: scans ω for a given L and plots both sides of the characteristic equation |
 | `ECE_5106_FDTD_Final_Exam_Part_A_plot_fields.m` | Part A: plots the mode's field magnitude vs. r and φ |
-| `ECE_5106_FDTD_Final_Exam_B_omega_search.m` | Part B: finer frequency search around the resonance |
-| `ECE_5106_FDTD_Final_Exam_B.m` | Part B: evaluates the characteristic equation at the chosen resonant frequency |
+| `ECE_5106_FDTD_Final_Exam_B_omega_search.m` | Finer frequency scan of the characteristic equation |
+| `ECE_5106_FDTD_Final_Exam_B.m` | Evaluates the characteristic equation at a single chosen frequency |
 | `plot_YLM.m` | Plots the components of the vector spherical harmonic **X**<sub>LM</sub> |
 | `plot_sph_besselj.m` | Plots the spherical Bessel function j<sub>L</sub>(kr) inside the sphere |
 | `Y_lm_func.m`, `Y_lm_func2.m`, `func_calc_Y_LM.m` | Scalar spherical harmonics Y<sub>LM</sub> (different normalizations and angle units) |
 | `dY_lm_theta_func.m`, `func_calc_dY_LM_dtheta.m` | Numerical ∂Y<sub>LM</sub>/∂θ |
 | `function_XLM_theta.m`, `function_XLM_phi.m` (+ `_mod` variants) | θ and φ components of **X**<sub>LM</sub> |
-| `besselj_sph.m`, `function_spherical_bessel.m` | Spherical Bessel function j<sub>L</sub> |
+| `besselj_sph.m`, `function_spherical_bessel.m` | Spherical Bessel function j<sub>L</sub>; note the argument orders differ: `besselj_sph(L, x)` vs. `function_spherical_bessel(x, L)` |
 | `ece_5106_final_exam_plot_trial_B.jpg` | Example output plot |
 
 Despite "FDTD" in their names, these scripts solve the problem analytically; they are not FDTD simulations.

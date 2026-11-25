@@ -21,14 +21,15 @@ Radial derivatives of the Bessel and Hankel functions, and angular derivatives o
 
 | File | Purpose |
 |------|---------|
-| `ECE_5106_HW5_P4a.m`, `ECE_5106_HW5_P4a_take2.m` | Problem 4a: plane-wave expansion at a point and on an x–z grid |
+| `ECE_5106_HW5_P4a.m` | Problem 4a, first attempt: computes Y<sub>LM</sub> and ∂Y<sub>LM</sub>/∂θ at one point, then stops (incomplete) |
+| `ECE_5106_HW5_P4a_take2.m` | Problem 4a: plane-wave expansion on an x–z grid |
 | `ECE_5106_HW5_P4a_take2b.m`, `ECE_5106_HW5_P4b.m` | Problem 4: Re[**e**<sub>x</sub> · **E**<sub>inc</sub>] maps on the x–z and x–y planes |
 | `ECE_5106_HW5_P5a.m`, `ECE_5106_HW5_P5a_Take2.m` | Problem 5a: α<sub>L</sub> and β<sub>L</sub> coefficients (two versions) |
 | `ECE_5106_HW5_P5b.m`, `ECE_5106_HW5_P5b_Take2.m` | Problem 5b: scattering cross-section (two versions; `_Take2` loads `L_alpha_beta_coeff_arr.mat`) |
 | `ECE_5106_HW5_P5c_Take1.m` | Problem 5c: total field map |
 | `L_alpha_beta_coeff_arr.mat` | Saved α<sub>L</sub>, β<sub>L</sub> table used by `ECE_5106_HW5_P5b_Take2.m` |
 | `ECE_5106_HW5_P4b.fig` | MATLAB figure file for Problem 4b |
-| `function_spherical_bessel.m`, `besselj_sph.m` | Spherical Bessel function j<sub>L</sub> |
+| `function_spherical_bessel.m`, `besselj_sph.m` | Spherical Bessel function j<sub>L</sub>; note the argument orders differ: `function_spherical_bessel(x, L)` vs. `besselj_sph(L, x)` |
 | `function_hankel_first.m` | Spherical Hankel function h<sub>L</sub><sup>(1)</sup>, called as `(x, L)` |
 | `function_calc_f_L_kr.m`, `function_calc_f_L_kr_B.m`, `function_calc_g_L_kr.m` | Radial functions f<sub>L</sub>(kr) and g<sub>L</sub>(kr) for the total field |
 | `func_calc_Y_LM.m`, `Y_lm_func2.m` | Scalar spherical harmonics Y<sub>LM</sub> |
