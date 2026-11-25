@@ -15,7 +15,7 @@ Expands an incident plane wave in vector spherical harmonics, solves for the mul
 - **Problem 5b: scattering cross-section.** σ<sub>s</sub> = π/(2k²) Σ (2L+1)(|α<sub>L</sub>|² + |β<sub>L</sub>|²), with a plot of each L-term's contribution.
 - **Problem 5c: total field map.** Sums the incident and scattered multipole series to map |E<sub>tot</sub>| on a grid around the sphere (figure above).
 
-Radial derivatives of the Bessel and Hankel functions, and angular derivatives of Y<sub>LM</sub>, are computed with central finite differences (step h = 10<sup>−5</sup> in most scripts).
+Radial derivatives of the Bessel and Hankel functions, and angular derivatives of Y<sub>LM</sub>, are computed with central finite differences (step h = 10<sup>−5</sup>, or 10<sup>−4</sup> in `ECE_5106_HW5_P4a.m`).
 
 ## Files
 

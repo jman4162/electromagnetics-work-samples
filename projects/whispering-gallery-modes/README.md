@@ -10,10 +10,11 @@ Finds the resonant whispering gallery modes (WGMs) of a 15 µm-radius dielectric
 
 ## What it does
 
-- **Geometry:** a sphere of radius a = 15 µm with core index n = 1.4 and cladding index n = 1.1. The search considers TE modes with L = M.
-- **Fields:** spherical Bessel functions j<sub>L</sub>(kr) inside the sphere, spherical Hankel functions h<sub>L</sub><sup>(1)</sup>(kr) outside, and vector spherical harmonics **X**<sub>LM</sub> for the angular dependence.
-- **Part A:** matching the tangential fields at r = a gives a characteristic equation. The scripts scan ω across the allowed band for each mode order L. A first scan finds a resonance near L = 133, ω ≈ 2.006 × 10<sup>15</sup> rad/s. The report then refines it by solving for the zero of a boundary-condition matrix determinant, giving the final answer: **L = 133, ω ≈ 2.0195 × 10<sup>15</sup> rad/s (λ ≈ 0.933 µm)**.
-- **Part B (report only):** the report computes the time-averaged electric and magnetic energy stored in the resonant mode. The code for that step isn't in this folder.
+The resonator is a sphere of radius a = 15 µm with core index n = 1.4 in a cladding of index n = 1.1, and the search considers TE modes with L = M. Inside the sphere the field is expanded in spherical Bessel functions j<sub>L</sub>(kr) and outside in spherical Hankel functions h<sub>L</sub><sup>(1)</sup>(kr), with vector spherical harmonics **X**<sub>LM</sub> carrying the angular dependence.
+
+In Part A, matching the tangential fields at r = a gives a characteristic equation, and the scripts scan ω across the allowed band for each mode order L. A first scan finds a resonance near L = 133, ω ≈ 2.006 × 10<sup>15</sup> rad/s. The report then refines it by solving for the zero of a boundary-condition matrix determinant, which gives the final answer of L = 133, ω ≈ 2.0195 × 10<sup>15</sup> rad/s (λ ≈ 0.933 µm).
+
+Part B computes the time-averaged electric and magnetic energy stored in the resonant mode. That step exists only in the report; its code isn't in this folder.
 
 ## Files
 
